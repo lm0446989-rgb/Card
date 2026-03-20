@@ -1,0 +1,50 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 90px;
+  border-radius: 50%;
+  border: 3px solid white;
+
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: rotate(10deg) scale(1.15);
+}
+
+.card h2 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
